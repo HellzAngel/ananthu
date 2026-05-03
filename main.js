@@ -49,7 +49,7 @@ document.querySelectorAll('.project-card').forEach(card => {
         if (modal && modalTitle && iframe) {
             modalTitle.innerText = title;
             iframe.src = url;
-            modal.style.display = 'block';
+            modal.style.display = 'flex'; // Changed to flex for centering
             document.body.style.overflow = 'hidden'; // Lock background scrolling
             
             gsap.fromTo('.modal-content', 
