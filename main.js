@@ -50,13 +50,12 @@ document.querySelectorAll('.project-card').forEach(card => {
             modalTitle.innerText = title;
             iframe.src = url;
             modal.style.display = 'block';
+            document.body.style.overflow = 'hidden'; // Lock background scrolling
             
-            gsap.from('.modal-content', {
-                scale: 0.8,
-                opacity: 0,
-                duration: 0.5,
-                ease: "back.out(1.7)"
-            });
+            gsap.fromTo('.modal-content', 
+                { scale: 0.8, opacity: 0 },
+                { scale: 1, opacity: 1, duration: 0.5, ease: "back.out(1.7)" }
+            );
         }
     });
 });
@@ -71,6 +70,7 @@ if (closeBtn) {
             onComplete: () => {
                 if (modal) modal.style.display = 'none';
                 if (iframe) iframe.src = '';
+                document.body.style.overflow = ''; // Unlock background scrolling
             }
         });
     });
