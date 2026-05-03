@@ -441,6 +441,13 @@ section {
     font-size: 0.9rem;
   }
   
+  .neo-text {
+    font-size: clamp(2.5rem, 12vw, 4rem);
+    line-height: 1.1;
+    letter-spacing: -2px;
+    -webkit-text-stroke: 1.5px black;
+  }
+  
   section {
     padding: 60px 5%;
   }
