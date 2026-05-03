@@ -316,9 +316,9 @@ section {
 
 .modal-content {
   background: var(--bg-color);
-  width: 90%;
-  max-width: 1000px;
-  height: 80vh;
+  width: 80%;
+  max-width: 900px;
+  height: 70vh;
   border: var(--border-width) solid black;
   box-shadow: 15px 15px 0px 0px var(--primary-color);
   display: flex;
@@ -490,8 +490,8 @@ section {
   
   .modal-content {
     box-shadow: 8px 8px 0px 0px var(--primary-color);
-    width: 95%;
-    height: 85vh;
+    width: 85%;
+    height: 65vh;
   }
   
   .modal-header {
