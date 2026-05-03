@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Neo-brutalist shadow -->
+  <rect x="15" y="15" width="75" height="75" fill="black" />
+  <!-- Main vibrant box -->
+  <rect x="5" y="5" width="75" height="75" fill="#f72585" stroke="black" stroke-width="6" />
+  <!-- Letter A -->
+  <text x="42.5" y="65" font-family="Impact, sans-serif" font-weight="bold" font-size="65" fill="black" text-anchor="middle">A</text>
+</svg>
