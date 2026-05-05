@@ -55,6 +55,9 @@ document.querySelectorAll('.project-card').forEach(card => {
         if (modal && modalTitle && iframe) {
             modalTitle.innerText = title;
             iframe.src = url;
+            const externalLink = document.querySelector('#modal-external-link');
+            if (externalLink) externalLink.href = url;
+            
             modal.style.display = 'flex'; // Changed to flex for centering
             document.body.style.overflow = 'hidden'; // Lock background scrolling
             

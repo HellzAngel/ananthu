@@ -334,9 +334,24 @@ section {
   background: white;
 }
 
-#modal-title {
-  font-weight: 900;
+.modal-controls {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+#modal-external-link {
   font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+  transition: transform 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#modal-external-link:hover {
+  transform: scale(1.2) rotate(5deg);
 }
 
 .close-btn {
@@ -348,6 +363,9 @@ section {
   font-weight: 900;
   cursor: pointer;
   box-shadow: 4px 4px 0px 0px black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .close-btn:hover {
