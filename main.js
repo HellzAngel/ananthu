@@ -43,9 +43,15 @@ document.querySelectorAll('.project-card').forEach(card => {
     card.addEventListener('click', () => {
         const url = card.getAttribute('data-url');
         const title = card.querySelector('h3').innerText;
+        const isNewTab = card.getAttribute('data-newtab') === 'true';
         
         console.log('Project clicked:', title);
         
+        if (isNewTab) {
+            window.open(url, '_blank');
+            return;
+        }
+
         if (modal && modalTitle && iframe) {
             modalTitle.innerText = title;
             iframe.src = url;
